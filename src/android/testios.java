@@ -32,7 +32,7 @@ public class testios extends CordovaPlugin {
       String setting;
 
       try {
-        //JSONObject options = args.getJSONObject(0);
+        JSONObject options = args.getJSONObject(0);
         setting = args.getString(0);
       } catch (JSONException e) {
         callbackContext.error("Error encountered: " + e.getMessage());
