@@ -17,6 +17,7 @@ import org.json.JSONObject;
  */
 public class testios extends CordovaPlugin {
     
+    String setting;
     Intent intent;
     Context context;
 
@@ -28,10 +29,7 @@ public class testios extends CordovaPlugin {
         return false;
       }
 
-
-      String setting;
-
-      try {
+      try{
         JSONObject options = args.getJSONObject(0);
         setting = args.getString(0);
       } catch (JSONException e) {
