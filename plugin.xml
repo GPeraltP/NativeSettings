@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="setting.config" version="0.0.1" 
+	xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>testios</name>
+	<js-module name="testios" src="www/testios.js">
+		<clobbers target="cordova.plugins.testios" />
+	</js-module>
+		<platform name="ios">
+			<config-file parent="/*" target="config.xml">
+				<feature name="testios">
+					<param name="ios-package" value="testios" />
+				</feature>
+			</config-file>
+			<source-file src="src/ios/testios.m" />
+		</platform>
+		<platform name="android">
+			<config-file parent="/*" target="res/xml/config.xml">
+				<feature name="testios">
+					<param name="android-package" value="setting.config.testios" />
+				</feature>
+			</config-file>
+			<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+			<source-file src="src/android/testios.java" target-dir="src/setting/config/testios" />
+		</platform>
+	</plugin>
