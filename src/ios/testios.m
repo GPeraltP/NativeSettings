@@ -1,6 +1,7 @@
 /********* testios.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
+#import <Cordova/CDVPlugin.h>
 
 @interface testios : CDVPlugin {
   // Member variables go here.
