@@ -11,6 +11,9 @@ import org.json.JSONObject;
  * This class echoes a string called from JavaScript.
  */
 public class testios extends CordovaPlugin {
+    
+    Intent intent;
+    Context context;
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
