@@ -1,7 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.coolMethod = function (setting, success, error) {
-	var options = {};
-    options.setting = setting;
-    exec(success, error, 'testios', 'coolMethod', [options]);
+exports.coolMethod = function (arg0, success, error) {
+    exec(success, error, "testios", "coolMethod", [arg0]);
 };
